@@ -14,3 +14,4 @@ Script description
 - '12-file_type' prints the type of the file named iamafile
 - '13-symbolic_link' create a symbolic link
 - '14-copy_html' copies all the html files
+- '100-lets move' movers files with upper case beginning
