@@ -5,3 +5,4 @@ Script description
 - '3-listfiles' displays current directory contencts in a long format
 - '4-listmorefiles'dislays all contents including hidden files
 - '5-listfilesdigitonly'displays current directory contents with user nd roup IDs displayed numerically
+- '6-firstdirectory'this script creates new dirctory in /tmp
