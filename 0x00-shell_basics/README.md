@@ -8,3 +8,4 @@ Script description
 - '6-firstdirectory'this script creates new dirctory in /tmp
 - '7-movethatfile' moves file to /tmp
 - '8-firstdelete' delete the entry betty
+- '9-firstdirdeletion' delete the directory my_first_directory
