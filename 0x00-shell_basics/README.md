@@ -13,3 +13,4 @@ Script description
 - '11-lists' displays all lists in . .. and /boot
 - '12-file_type' prints the type of the file named iamafile
 - '13-symbolic_link' create a symbolic link
+- '14-copy_html' copies all the html files
