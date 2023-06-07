@@ -10,3 +10,4 @@ Script description
 - '8-firstdelete' delete the entry betty
 - '9-firstdirdeletion' delete the directory my_first_directory
 - '10-back' write script that changes the working directory to the previous one.
+- '11-lists' displays all lists in . .. and /boot
