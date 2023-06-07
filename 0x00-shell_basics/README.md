@@ -6,3 +6,4 @@ Script description
 - '4-listmorefiles'dislays all contents including hidden files
 - '5-listfilesdigitonly'displays current directory contents with user nd roup IDs displayed numerically
 - '6-firstdirectory'this script creates new dirctory in /tmp
+- '7-movethatfile' moves file to /tmp
