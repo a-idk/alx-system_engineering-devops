@@ -4,4 +4,4 @@ Script description
 - '2-bring_me_home' changes directory to user home directory
 - '3-listfiles' displays current directory contencts in a long format
 - '4-listmorefiles'dislays all contents including hidden files
-
+- '5-listfilesdigitonly'displays current directory contents with user nd roup IDs displayed numerically
