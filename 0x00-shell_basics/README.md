@@ -9,3 +9,4 @@ Script description
 - '7-movethatfile' moves file to /tmp
 - '8-firstdelete' delete the entry betty
 - '9-firstdirdeletion' delete the directory my_first_directory
+- '10-back' write script that changes the working directory to the previous one.
