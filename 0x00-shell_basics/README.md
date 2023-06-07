@@ -11,3 +11,4 @@ Script description
 - '9-firstdirdeletion' delete the directory my_first_directory
 - '10-back' write script that changes the working directory to the previous one.
 - '11-lists' displays all lists in . .. and /boot
+- '12-file_type' prints the type of the file named iamafile
