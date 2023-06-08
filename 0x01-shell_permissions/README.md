@@ -9,4 +9,5 @@
 9. 8-James_Bond sets the permission to 007
 10. 9-John_Doe sets the mode of the file to -rwxr-x-wx
 11. 10-mirror_permissions sets the ode of the file hello the same as olleh
-12. 
+12. 11-directories_permissions adds execute pemission to all subdirectories of current directory for ugo
+13. 
