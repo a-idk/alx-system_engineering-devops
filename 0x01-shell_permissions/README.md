@@ -7,3 +7,4 @@
 7. 6-multiple_permission to the owner an the group owner, and read permissions
 8. 7-everybody adds execution permission to the owner, group owner and others
 9. 8-James_Bond sets the permission to 007
+10. 9-John_Doe sets the mode of the file to -rwxr-x-wx
