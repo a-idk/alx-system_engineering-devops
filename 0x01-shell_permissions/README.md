@@ -5,4 +5,4 @@
 5. 4-empty creates an empty file called hello
 6. 5-execute ads execute permission to the owner of the file  
 7. 6-multiple_permission to the owner an the group owner, and read permissions
-8.  
+8. 7-everybody adds execution permission to the owner, group owner and others
