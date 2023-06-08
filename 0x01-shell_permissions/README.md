@@ -3,4 +3,5 @@
 3. 2-groups prints all the groups the current user is a part of.
 4. 3-new_owner changes the owner of the file
 5. 4-empty creates an empty file called hello
-6.  
+6. 5-execute ads execute permission to the owner of the file  
+7. 
