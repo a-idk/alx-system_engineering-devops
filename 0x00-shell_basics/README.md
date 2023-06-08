@@ -15,4 +15,19 @@ Script description
 - '13-symbolic_link' create a symbolic link
 - '14-copy_html' copies all the html files
 - '100-lets move' movers files with upper case beginning
-- '101-cleaean+_emacs' 
+- '101-clean_emacs" deletea all files in the current working directory that end with the character ~.
+- '102-Tree' creates the directories welcome/, welcome/to/ and welcome/to/school in the current directory
+- '103-Commas' lists all the files and directories of the current directory, separated by commas (,).
+- 'school.mgc' can be used with the command file to detect School data files. School data files always contain the string SCHOOL at offset 0.
+
+
+
+
+
+
+
+
+
+
+
+
