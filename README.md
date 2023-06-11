@@ -7,3 +7,4 @@ This Repository is for practising the learning objectives which are:
 - Reading Man Pages
 - Keyboard shortcuts for bash and
 - LTS
+- Shell permissions
