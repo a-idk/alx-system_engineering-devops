@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Bash cript that displays Best School 10 times using until loop
+z=0
+until [ "$z" -gt 9 ]
+do
+	echo "Best School"
+	z=$((z++))
+done
