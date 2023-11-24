@@ -38,7 +38,7 @@ int main(void)
 		zom = fork();
 		if (!zom)
 			return (0);
-		printf("Zombie process created, PID: %d\n", zom)
+		printf("Zombie process created, PID: %d\n", zom);
 		index += 1;
 	}
 	infinite_while();
