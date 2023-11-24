@@ -20,10 +20,10 @@ int infinite_while(void)
 
 /**
  * main - program that creates 5 zombie processes
- * Description: For every zombie process created, 
- * 				it displays "Zombie process created, PID: ZOMBIE_PID"
- * 				When the parent process and the zombies are created,
- * 				the infinite_while funciton is called
+ * Description: For every zombie process created,
+ *		it displays "Zombie process created, PID: ZOMBIE_PID"
+ *		When the parent process and the zombies are created,
+ *		the infinite_while funciton is called
  * Return: 0 on Success! (Always)
  */
 
