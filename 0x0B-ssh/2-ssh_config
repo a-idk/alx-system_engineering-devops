@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# SSH configuration file with the following requirements:
+#	must be configured to use the private key ~/.ssh/school
+#	must be configured to refuse to authenticate using a password
+
+Host 54.175.115.175
+IdentityFile ~/.ssh/school
+PasswordAuthentication no
