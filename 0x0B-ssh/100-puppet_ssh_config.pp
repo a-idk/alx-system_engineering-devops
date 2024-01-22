@@ -8,5 +8,5 @@ file { 'etc/ssh/ssh_config':
 	Host 54.175.115.175
 	IdentityFile ~/.ssh/school
 	PasswordAuthentication no
-	"
+	",
 }
