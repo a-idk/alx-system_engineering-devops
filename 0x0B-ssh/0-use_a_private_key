@@ -3,4 +3,4 @@
 # the private key "~/.ssh/school" with the user ubuntu
 # ssh -i ~/.ssh/school ubuntu@54.175.115.175
 
-ssh -i ~/.ssh/school ubuntu
+ssh ubuntu -i ~/.ssh/school
