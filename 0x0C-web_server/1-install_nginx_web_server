@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Bash script that configures a new Ubuntu machine to given requirements
+
+# First: Run an update 
+sudo apt-get update -y
+
+# Second: Install Nginx
+sudo apt-get install -y nginx
+
+# Third: Check if Nginx is actively running
+sudo service nginx status
+
+# Fourth: Uncomplicated Firewall configuration
+sudo ufw allow 'Nginx HTTP'
+
+# Fifth: Create the new index page
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+# Sixth: Test Nginx configurations
+sudo nginx -t
+
+# Seventh: Reload page to effect changes
+sudo service nginx start
