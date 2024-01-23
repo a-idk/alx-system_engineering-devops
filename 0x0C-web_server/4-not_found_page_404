@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# Bash script that configures a new Ubuntu machine to given requirements and performs a permanent 301 redirection, and also a custom error page
+
+# First: Run an update 
+sudo apt-get update -y
+
+# Second: Install Nginx
+sudo apt-get install -y nginx
+
+# Third: Check if Nginx is actively running
+sudo service nginx status
+
+# Fourth: Uncomplicated Firewall configuration
+sudo ufw allow 'Nginx HTTP'
+
+# Fifth: Create the new index page
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+# sixth: Redirection
+replace="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/a-idk permanent;"
+sudo sed -i "s/server_name _;/$replace/" /etc/nginx/sites-enabled/default
+
+# seventh: Custom error page
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+replace="listen 80 default_server;\n\terror_page 404 \/404.html;\n\tlocation = \/404.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}"
+sudo sed -i "s/listen 80 default_server;/$replace/" /etc/nginx/sites-enabled/default
+
+# Eighth: Test Nginx configurations
+sudo nginx -t
+
+# Ninth: Reload page to effect changes
+sudo service nginx restart
