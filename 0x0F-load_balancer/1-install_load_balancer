@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# Script that install and configure HAProxy on lb-01 server with the fllg requirements
+#	- Configure HAProxy to send traffic to web-01 and web-0
+#	- Distribute requests using a roundrobin algorithm
+#	- Make sure that HAProxy can be managed via an init script and
+#	  hostname [STUDENT_ID]-web-01 and [STUDENT_ID]-web-02
+
+# First: Run update for packages
+sudo apt-get -y update
+
+# Second: Install and configure HAproxy on my lb-01 server
+sudo apt-get -y install haproxy
+
+# Third: Edit config file to include the frontend and backend
+server_config=\
+"
+frontend  a-idk_frontend
+        bind *:80
+        mode http
+        default_backend a-idk_backend
+backend a-idk_backend
+        balance roundrobin
+        server 449603-web-01 54.175.115.175:80 check
+        server 449603-web-02 54.237.55.177:80 check
+"
+echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
+
+# Four: Enable haproxy to be started by init script
+echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
+
+# Five: Test the HAproxy configuration
+sudo haproxy -c -f /etc/haproxy/haproxy.cfg
+
+# Restart the HAproxy service
+sudo service haproxy restart
