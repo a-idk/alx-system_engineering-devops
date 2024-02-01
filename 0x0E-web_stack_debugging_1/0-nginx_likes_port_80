@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# script with the minimum number of commands to automate your fix of NGINX error (curl 0:80)
+# backup previous nginx default file
+mv /etc/nginx/sites-enabled/default /etc/nginx/sites-enabled/default.bak
+# restore the default file from sites-available
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+# restart nginx service
+service nginx restart
