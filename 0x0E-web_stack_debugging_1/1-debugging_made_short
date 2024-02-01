@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# script with to automate your fix (short and sweet) restore the default file from sites-available using symbolic link with -f and -s option
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+# restart nginx service and stopping nginx process
+service nginx restart ; kill "$(pgrep 'nginx' | head -1)"
