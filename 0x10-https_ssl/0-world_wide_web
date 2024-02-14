@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Script that print domains & subdomains output, display information for the specified subdomain
+
+dom_subdom () {
+    dig "$1" | grep -A1 'ANSWER SECTION:' | sed -r "s/$1./$2/g" | \
+    awk -F" " ' NR==2 { print "The subdomain " $1 " is a " $4 " record and points to " $5 }'
+}
+if [ "$#" -eq 2 ]
+then
+    dom_subdom "$2.$1" "$2"
+else
+    dom_subdom "www.$1" "www"
+    dom_subdom "lb-01.$1" "lb-01"
+    dom_subdom "web-01.$1" "web-01"
+    dom_subdom "web-02.$1" "web-02"
+fi
