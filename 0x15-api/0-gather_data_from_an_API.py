@@ -6,8 +6,8 @@ Description: Script that, using this REST API, for a given employee ID,
 @a_idk scripting
 """
 
-import sys
 import requests
+import sys
 
 
 if __name__ == "__main__":
