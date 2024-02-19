@@ -23,8 +23,8 @@ if __name__ == "__main__":
             comp_task.append(idx.get("title"))
 
     # printing the first line
-    print(f"Employee {us_data.get('name')} is done with task("
-          f"{len(comp_task)}/{len(todo_lst)})")
+    print(f"Employee {us_data.get('name')} is done with task "
+          f"({len(comp_task)}/{len(todo_lst)})")
     """
     print(f"Employee {user.get('name')} is done with
     task({len(comp_task)}/{len(todo_lst)})")
