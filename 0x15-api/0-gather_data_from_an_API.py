@@ -36,4 +36,4 @@ if __name__ == "__main__":
 
     # printing the second line
     for idx in comp_task:
-        print(f"\t{idx}")
+        print(f"\t {idx}")
