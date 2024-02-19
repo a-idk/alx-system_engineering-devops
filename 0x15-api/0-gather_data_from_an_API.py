@@ -24,8 +24,8 @@ if __name__ == "__main__":
 
     # printing the first line
     print(
-            f"Employee {us_data.get('name')} is done with tasks "
-            f"({len(comp_task)}/{len(todo_lst)})"
+            f"Employee {us_data.get('name')} is done with tasks"
+            f"({len(comp_task)}/{len(todo_lst)}):"
             )
     """
     print(f"Employee {user.get('name')} is done with
