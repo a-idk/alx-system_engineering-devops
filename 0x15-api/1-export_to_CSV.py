@@ -28,5 +28,5 @@ if __name__ == "__main__":
         # csv_write.writerow(head_row)
         for idx in todo_lst:
             csv_row = [emp_id, user_name, idx.get("completed"),
-                    idx.get("title")]
+                       idx.get("title")]
             csv_write.writerow(csv_row)
