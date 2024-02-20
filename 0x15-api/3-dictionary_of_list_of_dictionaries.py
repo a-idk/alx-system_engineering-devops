@@ -45,6 +45,6 @@ if __name__ == "__main__":
                 user_tsk_lst.append(tsk_dict)
             # Assigning the list of tasks for this user to the user's
             # id in the dictionary
-            all_tsk[emp_id] = user_tsk_lst  
+            all_tsk[emp_id] = user_tsk_lst
 
-        json.dump(all_tsk, jsonfile)  #JSON data to the file
+        json.dump(all_tsk, jsonfile)  # JSON data to the file
