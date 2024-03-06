@@ -17,16 +17,15 @@ def number_of_subscribers(subreddit):
     Args:
         subreddit: Name of the subreddit
     """
+    # check if subreddit contain str
+    if (type(subreddit) is not str):
+        return(0)
+
     api_url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
-
     headers = {"User-Agent": "0x16.api.advanced.project by ALX"}
-
     resp = requests.get(api_url, headers=headers, allow_redirects=False)
 
     # Checking the response status code
-    if resp.status_code == 200:
-        dict_data = resp.json()
-        subs = dict_data['data']['subscribers']
-        return subs
-    else:
-        return 0  # if subreddit is invalid
+    if resp.status_code is not 200:
+        return(0)
+    return(resp.json().get("data").get("subscribers"))
