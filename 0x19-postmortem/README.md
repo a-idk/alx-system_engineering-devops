@@ -41,7 +41,7 @@ Update the monitoring system to include specific alerts for abnormal memory usag
 
 ## Task 1:
 
-![Alt text](https://thumbs2.imgbox.com/uAUtBCnJ)
+![Memory leaks](https://thumbs2.imgbox.com/uAUtBCnJ)
 
 ### _Issue Summary:_
 
