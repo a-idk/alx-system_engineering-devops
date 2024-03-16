@@ -40,7 +40,8 @@ Research and select a suitable automated testing tool with memory leak detection
 Update the monitoring system to include specific alerts for abnormal memory usage. Test the new alerts to ensure they work as expected.
 
 ## Task 1:
-![Alt text](https://imgbox.com/uAUtBCnJ)
+
+![Alt text](https://thumbs2.imgbox.com/uAUtBCnJ)
 
 ### _Issue Summary:_
 
@@ -51,12 +52,19 @@ It’s a regular Tuesday, March 5, 2024, at 10:30 UTC. Our web application, the 
 Imagine a timeline, like a heartbeat monitor in a hospital drama, with peaks and troughs representing our journey through this incident:
 
 Mar 5, 10:30 UTC — Our digital canary starts singing about a spike in service response times.
+
 Mar 5, 10:35 UTC — We suspect a traffic surge or a DDoS attack. Our engineers dive into the network logs.
+
 Mar 5, 12:00 UTC — Traffic patterns are normal. Our DDoS theory sinks like a stone.
+
 Mar 5, 13:30 UTC — We call in the senior backend engineers as our app continues to dawdle.
+
 Mar 5, 16:00 UTC — System diagnostics reveal a backend service hogging memory like it’s going out of style.
+
 Mar 6, 01:00 UTC — We corner the guilty service and identify a memory leak as the culprit.
+
 Mar 6, 03:00 UTC — We deploy a patch, the memory leak is plugged, and service resumes its usual sprint.
+
 
 ### _Root Cause and Resolution:_
 
@@ -68,12 +76,17 @@ Once we identified the memory-guzzling service, our engineering superheroes used
 
 Lessons learned and a plan of action for the future:
 
-	Code Reviews: Make them more rigorous than a drill sergeant’s morning inspection, with a keen eye for potential memory management issues.
-	Automated Testing: Incorporate memory leak detection. It’s like a smoke alarm, but for code.
-	Monitoring: Beef up system monitoring to sniff out abnormal memory usage faster than a bloodhound on a trail.
+Code Reviews: Make them more rigorous than a drill sergeant’s morning inspection, with a keen eye for potential memory management issues.
+
+Automated Testing: Incorporate memory leak detection. It’s like a smoke alarm, but for code.
+
+Monitoring: Beef up system monitoring to sniff out abnormal memory usage faster than a bloodhound on a trail.
 
 ### _To-do list:_
 
 Review and update code review practices, focusing on memory management like a hawk.
+
 Hunt down a robust automated testing tool that can spot a memory leak from a mile off. Train the team to be just as sharp.
+
 Amp up the monitoring system with specific alerts for abnormal memory usage. Test these new alerts until they’re as reliable as a Swiss watch.
+
