@@ -12,11 +12,17 @@ Between Tuesday, March 5, 2024, 10:30 UTC, and Wednesday, March 6, 2024, 03:00 U
 ### _Timeline:_
 
 Mar 5, 10:30 UTC — Issue detection through automated performance monitoring alerts, signaling a sharp increase in service response times.
+
 Mar 5, 10:35 UTC — Initial assumption was a sudden surge in traffic or a DDoS attack. The engineering team started investigating network logs and traffic patterns.
+
 Mar 5, 12:00 UTC — Investigation revealed normal traffic patterns and no signs of DDoS, leading the team down a misleading path.
+
 Mar 5, 13:30 UTC — The incident was escalated to the senior backend engineers as the slowdown persisted.
+
 Mar 5, 16:00 UTC — Detailed system diagnostics revealed abnormal memory consumption in a backend service.
+
 Mar 6, 01:00 UTC — The problematic service was isolated, and a memory leak was identified as the root cause.
+
 Mar 6, 03:00 UTC — A patch was deployed to fix the memory leak, resolving the incident.
 
 ### _Root Cause and Resolution:_
