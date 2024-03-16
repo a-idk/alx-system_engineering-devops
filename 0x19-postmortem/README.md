@@ -47,7 +47,7 @@ Update the monitoring system to include specific alerts for abnormal memory usag
 
 ## Task 1:
 
-![Memory leaks](https://github.com/a-idk/alx-system_engineering-devops/tree/master/0x19-postmortem/memoryLeak.png)
+![Memory leaks](https://raw.githubusercontent.com/a-idk/alx-system_engineering-devops/master/0x19-postmortem/memoryLeak.png)
 
 ### _Issue Summary:_
 
