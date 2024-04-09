@@ -12,20 +12,20 @@ import requests
 
 
 def number_of_subscribers(subreddit):
-	"""
-	Method that returns the total number of subscribers in subreddit
-	Args:
-		subreddit: Name of the subreddit
-	"""
-	# check if subreddit contain str
-	if (type(subreddit) is not str):
-		return(0)
+    """
+    Method that returns the total number of subscribers in subreddit
+    Args:
+        subreddit: Name of the subreddit
+    """
+    # check if subreddit contain str
+    if (type(subreddit) is not str):
+        return(0)
 
-	api_url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
-	headers = {"User-Agent": "0x16.api.advanced.project by ALX"}
-	resp = requests.get(api_url, headers=headers, allow_redirects=False)
+    api_url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
+    headers = {"User-Agent": "0x16.api.advanced.project by ALX"}
+    resp = requests.get(api_url, headers=headers, allow_redirects=False)
 
-	# Checking the response status code
-	if resp.status_code is not 200:
-		return(0)
-	return(resp.json().get("data").get("subscribers"))
+    # Checking the response status code
+    if resp.status_code is not 200:
+        return(0)
+    return(resp.json().get("data").get("subscribers"))
