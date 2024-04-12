@@ -18,9 +18,13 @@ def number_of_subscribers(subreddit):
         subreddit: Name of the subreddit
     """
     # check if subreddit contain str
+    """
     if (type(subreddit) is not str):
         print(0)
         return
+    """
+    if not isinstance(subreddit, str):
+        return(0)
 
     api_url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     headers = {"User-Agent": "0x16.api.advanced.project by ALX"}
@@ -28,6 +32,10 @@ def number_of_subscribers(subreddit):
 
     # Checking the response status code
     if resp.status_code is not 200:
-        print(0)
-    else:
-        print(resp.json().get("data").get("subscribers"))
+        return(0)
+    try:
+        dat = resp.json()
+        return dat['data']['subscribers']
+    except (KeyError, ValueError):
+        return(0)
+        # print(resp.json().get("data").get("subscribers"))
