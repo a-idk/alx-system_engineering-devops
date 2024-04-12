@@ -27,15 +27,12 @@ def number_of_subscribers(subreddit):
         return(0)
 
     api_url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
-    headers = {"User-Agent": "0x16.api.advanced.project by ALX"}
+    headers = {"User-Agent": "linus:0x16.api.advanced.project:v1.0.0 (by ALX)"}
     resp = requests.get(api_url, headers=headers, allow_redirects=False)
 
     # Checking the response status code
-    if resp.status_code is not 200:
-        return(0)
-    try:
-        dat = resp.json()
-        return dat['data']['subscribers']
-    except (KeyError, ValueError):
-        return(0)
-        # print(resp.json().get("data").get("subscribers"))
+    if resp.status_code == 404:
+        return 0
+    dat = resp.json().get("data")
+    return dat.get("subscribers")
+    # print(resp.json().get("data").get("subscribers"))
