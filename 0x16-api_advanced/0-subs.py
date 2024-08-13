@@ -20,13 +20,9 @@ def number_of_subscribers(subreddit):
     # check if subreddit contain str
     if (type(subreddit) is not str):
         return(0)
-    """
-    if not isinstance(subreddit, str):
-        return(0)
-    """
 
     api_url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
-    headers = {"User-Agent": "linus:0x16.api.advanced.project:v1.0.0 (by ALX)"}
+    headers = {"User-Agent": "0x16.api.advanced.project by ALX"}
     resp = requests.get(api_url, headers=headers, allow_redirects=False)
 
     # Checking the response status code
