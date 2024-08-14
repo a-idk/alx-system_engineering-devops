@@ -9,3 +9,4 @@ The following concepts were learnt and implemented
 - What are the 2 main area of monitoring
 - What are access logs for a web server (such as Nginx)
 - What are error logs for a web server (such as Nginx)
+- Web stack monitoring
