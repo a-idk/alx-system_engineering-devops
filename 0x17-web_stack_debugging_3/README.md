@@ -4,3 +4,4 @@ Third part of the web stack debugging tasks
 The necessary concepts in this project are:
 - Web server
 - Web stack debugging
+- Debugging
