@@ -23,7 +23,7 @@ server {
         listen [::]:80 default_server;
 
         # server IP
-        server_name 54.175.115.175
+        server_name 100.26.153.59
         # Http response header
         add_header X-Served-By 449603-web-01;
         # serve route /airbnb-onepage/ on clone_v2
