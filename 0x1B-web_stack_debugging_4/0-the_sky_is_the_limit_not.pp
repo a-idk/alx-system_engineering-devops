@@ -1,12 +1,11 @@
-# Puppet script that increases the traffic on Nginx server can handle
+#  fixing our stack so that we get to 0
+file { 'replacing the  last line':
+    ensure  => present,
+    path    => '/etc/default/nginx',
+    content => 'ULIMIT="-n 4096"',
+}
 
-# Increase the ULIMIT for the default file
-exec { 'fix--for-nginx':
-  command => '/bin/sed -i "s/15/4096/" /etc/default/nginx',
-  path    => '/usr/local/bin/:/bin/',
-} ->
-
-exec { 'nginx-restart':
-  command => '/etc/init.d/nginx restart',
-  path    => '/etc/init.d/',
+service { 'nginx':
+    ensure    => running,
+    subscribe => File['/etc/default/nginx']
 }
